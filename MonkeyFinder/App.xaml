@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:MonkeyFinder"
-             x:Class="MonkeyFinder.App">
+<Application
+    x:Class="MonkeyFinder.App"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MonkeyFinder">
     <Application.Resources>
         <ResourceDictionary>
             <Color x:Key="Primary">#FFC107</Color>
@@ -12,9 +13,8 @@
             <Color x:Key="LightBackground">#FAF9F8</Color>
             <Color x:Key="DarkBackground">Black</Color>
 
-            <Style TargetType="Page" ApplyToDerivedTypes="True">
-                <Setter Property="BackgroundColor"
-                        Value="{StaticResource LightBackground}" />
+            <Style ApplyToDerivedTypes="True" TargetType="Page">
+                <Setter Property="BackgroundColor" Value="{StaticResource LightBackground}" />
             </Style>
 
 			<Style ApplyToDerivedTypes="True" TargetType="NavigationPage">
@@ -44,24 +44,24 @@
                 <Setter Property="FontSize" Value="20"/>
             </Style>
 
-            <Style TargetType="RefreshView" ApplyToDerivedTypes="True">
+            <Style ApplyToDerivedTypes="True" TargetType="RefreshView">
                 <Setter Property="RefreshColor" Value="{StaticResource Primary}" />
             </Style>
 
             <Style x:Key="ButtonOutline" TargetType="Button">
-                <Setter Property="Background" Value="{StaticResource LightBackground}"/>
-                <Setter Property="TextColor" Value="{StaticResource Primary}"/>
-                <Setter Property="BorderColor" Value="{StaticResource Primary}"/>
-                <Setter Property="BorderWidth" Value="2"/>
-                <Setter Property="HeightRequest" Value="40"/>
-                <Setter Property="CornerRadius" Value="20"/>
+                <Setter Property="Background" Value="{StaticResource LightBackground}" />
+                <Setter Property="TextColor" Value="{StaticResource Primary}" />
+                <Setter Property="BorderColor" Value="{StaticResource Primary}" />
+                <Setter Property="BorderWidth" Value="2" />
+                <Setter Property="HeightRequest" Value="40" />
+                <Setter Property="CornerRadius" Value="20" />
             </Style>
             <Style x:Key="CardView" TargetType="Frame">
-                <Setter Property="BorderColor" Value="#DDDDDD"/>
-                <Setter Property="HasShadow" Value="True"/>
-                <Setter Property="Padding" Value="0"/>
-                <Setter Property="Background" Value="{StaticResource LightBackground}"/>
-                <Setter Property="CornerRadius" Value="10"/>
+                <Setter Property="BorderColor" Value="#DDDDDD" />
+                <Setter Property="HasShadow" Value="True" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="Background" Value="{StaticResource LightBackground}" />
+                <Setter Property="CornerRadius" Value="10" />
                 <Setter Property="IsClippedToBounds" Value="True"/>
             </Style>
         </ResourceDictionary>
